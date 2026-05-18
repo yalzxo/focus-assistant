@@ -102,16 +102,13 @@ The dashboard provides:
 # 🚀 Installation
 
 1. Clone the repository
+3. Open Chrome and navigate to:
+    chrome://extensions
+4. Enable Developer Mode
+5. Click Load unpacked
+6. Select the project folder
 
-```bash id="vvz0yz"
-git clone <repo-url>
-Open Chrome and navigate to:
-chrome://extensions
-Enable Developer Mode
-Click Load unpacked
-Select the project folder
-📌 Highlights
-
+## 📌 Highlights
 ✅ Real-time cognitive inference
 ✅ Adaptive behavioral anomaly detection
 ✅ Privacy-first architecture
@@ -119,9 +116,11 @@ Select the project folder
 ✅ Lightweight local processing
 ✅ No content tracking
 
-🔮 Future Improvements
-predictive fatigue detection
-website context awareness
-adaptive threshold learning
-enhanced analytics dashboard
-deeper anomaly modeling
+##🔮 Future Improvements
+  predictive fatigue detection
+  website context awareness
+  adaptive threshold learning
+  enhanced analytics dashboard
+  deeper anomaly modeling
+
+
