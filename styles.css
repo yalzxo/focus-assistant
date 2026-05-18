@@ -1,0 +1,113 @@
+/* ---------------- FLOATING ORB ---------------- */
+
+#focus-assistant-indicator {
+
+  position: fixed;
+
+  bottom: 24px;
+  right: 24px;
+
+  width: 68px;
+  height: 68px;
+
+  border-radius: 50%;
+
+  z-index: 2147483646;
+
+  transition: all 0.4s ease;
+
+  backdrop-filter: blur(8px);
+
+  box-shadow:
+    0 0 30px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------------- FOCUSED ---------------- */
+
+.focused {
+
+  background:
+    radial-gradient(circle,
+      #7CFFB2,
+      #1B5E20);
+
+  animation:
+    stablePulse 2s infinite;
+}
+
+/* ---------------- DISTRACTED ---------------- */
+
+.distracted {
+
+  background:
+    radial-gradient(circle,
+      #FFD54F,
+      #EF6C00);
+
+  animation:
+    unstablePulse 1s infinite;
+}
+
+/* ---------------- FATIGUED ---------------- */
+
+.fatigued {
+
+  background:
+    radial-gradient(circle,
+      #FF8A80,
+      #B71C1C);
+
+  animation:
+    fatiguePulse 3s infinite;
+}
+
+/* ---------------- ANIMATIONS ---------------- */
+
+@keyframes stablePulse {
+
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes unstablePulse {
+
+  0% {
+    transform: translateX(0px);
+  }
+
+  25% {
+    transform: translateX(3px);
+  }
+
+  50% {
+    transform: translateX(-3px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fatiguePulse {
+
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.45;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
