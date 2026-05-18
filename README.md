@@ -2,23 +2,93 @@
 
 A privacy-first Chrome extension that detects focus, distraction, and fatigue using real-time behavioral interaction patterns instead of fixed productivity timers.
 
-The extension analyzes signals like typing rhythm, scrolling behavior, idle time, and tab switching to provide adaptive interventions and productivity insights — without tracking user content.
+The extension continuously analyzes interaction signals such as typing rhythm, scrolling behavior, idle time, tab switching, mouse movement, and click activity to infer the user’s cognitive state and provide adaptive, context-aware interventions.
+
+Unlike traditional productivity tools, the system does not rely on timers or content tracking. Instead, it uses adaptive behavioral anomaly detection and personalized baselines to understand how a user normally interacts with the browser and detect cognitive drift in real time.
 
 ---
 
-## ✨ Features
+# ✨ Features
 
-- Real-time focus & fatigue detection
-- Adaptive behavioral anomaly detection
-- Floating cognitive state orb
-- Summary recall intervention
-- Mini cricket reset game
-- Focus analytics dashboard
-- Privacy-first local processing
+## 🎯 Real-Time Cognitive State Detection
+Detects:
+- 🟢 Focused
+- 🟡 Distracted
+- 🔴 Fatigued
+
+using:
+- adaptive behavioral modeling
+- anomaly detection
+- temporal smoothing
+- personalized baselines
 
 ---
 
-## 🛠️ Tech Stack
+## 🔒 Privacy-First Design
+
+The extension:
+- does NOT store typed text
+- does NOT track page content
+- does NOT capture screenshots
+- does NOT send data externally
+
+Only behavioral metadata and derived interaction metrics are processed locally.
+
+---
+
+## 📊 Behavioral Signal Tracking
+
+Tracks:
+- typing speed
+- backspace frequency
+- scroll behavior
+- scroll direction changes
+- idle time
+- tab switching
+- click activity
+- mouse movement
+
+without collecting sensitive user data.
+
+---
+
+## 🧠 Adaptive Baseline Learning
+
+The system continuously learns each user’s normal interaction behavior using adaptive baselines and behavioral anomaly scoring.
+
+This allows the extension to:
+- personalize focus detection
+- reduce false positives
+- adapt to different browsing and working styles
+
+---
+
+## 🎮 Intelligent Interventions
+
+### 📝 Summary Recall Prompt
+Encourages active recall when distraction is detected.
+
+### 🏏 Cricket Reset Game
+A short timing-based cognitive reset game built using the Canvas API.
+
+### 😴 Fatigue Recovery Prompt
+Suggests short breaks during sustained fatigue.
+
+---
+
+## 📈 Dashboard Analytics
+
+The dashboard provides:
+- focus distribution
+- anomaly score trends
+- cognitive timeline
+- productivity score
+- focus streaks
+- behavioral insights
+
+---
+
+# 🛠️ Tech Stack
 
 - JavaScript
 - Chrome Extension Manifest V3
@@ -29,26 +99,29 @@ The extension analyzes signals like typing rhythm, scrolling behavior, idle time
 
 ---
 
-## 🚀 Installation
+# 🚀 Installation
 
 1. Clone the repository
-2. Open `chrome://extensions`
-3. Enable **Developer Mode**
-4. Click **Load unpacked**
-5. Select the project folder
 
----
+```bash id="vvz0yz"
+git clone <repo-url>
+Open Chrome and navigate to:
+chrome://extensions
+Enable Developer Mode
+Click Load unpacked
+Select the project folder
+📌 Highlights
 
-## 🔒 Privacy
+✅ Real-time cognitive inference
+✅ Adaptive behavioral anomaly detection
+✅ Privacy-first architecture
+✅ Intelligent interventions
+✅ Lightweight local processing
+✅ No content tracking
 
-No text, content, or sensitive user data is tracked.  
-Only behavioral metadata and derived interaction metrics are processed locally.
-
----
-
-## 📌 Highlights
-
-✅ Adaptive cognitive inference  
-✅ Real-time behavioral analysis  
-✅ Privacy-first architecture  
-✅ Intelligent interventions  
+🔮 Future Improvements
+predictive fatigue detection
+website context awareness
+adaptive threshold learning
+enhanced analytics dashboard
+deeper anomaly modeling
