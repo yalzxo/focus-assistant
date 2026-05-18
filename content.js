@@ -1,5 +1,16 @@
 console.log("CONTENT SCRIPT LOADED");
+// content.js - Add this at the very top
+console.log("========================================");
+console.log("COGNITIVE FOCUS ASSISTANT CONTENT SCRIPT");
+console.log("Version: 1.1.0");
+console.log("========================================");
 
+// Test message to verify script is running
+setTimeout(() => {
+    console.log("Content script is active and running");
+}, 1000);
+
+// ... rest of your content.js code below
 let metrics = resetMetrics();
 let lastInteractionTime = Date.now();
 let isTabActive = true;
